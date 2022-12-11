@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
+        <link href="./css/style.css" rel="stylesheet" />
+        <link href="./css/normalize.css" rel="stylesheet" />
+        <link href="./css/galery.css" rel="stylesheet" />
+        <link href="./css/swiper.css" rel="stylesheet" />
+        <link href="./css/accordion.css" rel="stylesheet" />
+        <title>Ремонт квартир и домов под ключ</title>
+    </head>
+    <body>
+        <section class="section landing">
+            <div class="wrapper">
+                <div class="header-container">
+                    <div>
+                        <img class="logo-img" src="./assets/img/logo.jpeg" />
+                        <span class="logo-title">
+                            <b>Pro</b><span>dom</span>
+                        </span>
+                    </div>
+                    <span class="rem1"
+                        >Ремонт квартир и коттеджей <br />
+                        под ключ в Севастополе</span
+                    >
+                    <a class="whatsApp-call" href="https://wa.me/+79781761313">
+                        <img alt="" src="" />Написать нам</a
+                    >
+                    <div>
+                        <h3 class="header-contact">
+                            <span class="weWork">Звоните, мы работаем </span>
+                            <span class="">Пн-Пт: 9.00-18.00</span>
+                            <a href="tel:+79781761313">+7(978)176-13-13</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="content">
+                        <h1>
+                            Сколько стоит сделать ремонт <br />
+                            в вашей квартире?
+                        </h1>
+                        <div class="benefits">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <img
+                                        class="icon-img"
+                                        alt=""
+                                        src="./assets/img/s1-im1.png"
+                                    />
+                                    <span class="icon-text"
+                                        ><b>Рассчитаем</b> стоимость объекта с
+                                        материалами <br />
+                                        и работой</span
+                                    >
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        class="icon-img"
+                                        alt=""
+                                        src="./assets/img/s1-im2.png"
+                                    />
+                                    <span class="icon-text"
+                                        ><b
+                                            >Подготовим дизайн-проект
+                                            помещения</b
+                                        >
+                                        <br />
+                                        при необходимости</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="calculate-price">
+                                <span class="calculate-header"
+                                    >Пройдите простой тест за 30 секунд и <br />
+                                    узнайте стоимость и сроки <br />
+                                    с точностью 95%</span
+                                >
+                                <div class="button-container">
+                                    <button
+                                        class="calculate-button glow-on-hover"
+                                        onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})"
+                                    >
+                                        Рассчитать стоимость
+                                    </button>
+                                    <div class="icon-container">
+                                        <img
+                                            class="icon-img"
+                                            alt=""
+                                            src="./assets/img/s1-im3.png"
+                                        />
+                                        <span
+                                            ><b
+                                                >Займет не <br />больше 1
+                                                минуты</b
+                                            ></span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section quiz" id="quiz">
+            <div class="wrapper quiz-content">
+                <span class="wrapper-header">
+                    <b>Рассчитайте стоимость</b><br /><span
+                        >ответив всего на 6 вопросов</span
+                    >
+                </span>
+                <div class="calculating-block">
+                    <aside class="manager">
+                        <div class="online-block">
+                            <span class="manager-name">Алексей</span>
+                            <span class="online">online</span>
+                        </div>
+                        <span>Старший менеджер</span>
+                        <span>
+                            <b>Пройдите этот небольшой опрос</b> и я лично для
+                            Вас <b>рассчитаю стоимость</b> ремонта вашей
+                            квартиры</span
+                        >
+                    </aside>
+                    <div class="quiz-container">
+                        <div class="quiz" id="quiz_1">
+                            <span class="question">
+                                <b>Представьтесь пожалуйста</b></span
+                            >
+                            <div class="options">
+                                <input
+                                    class="quiz-input"
+                                    id="quiz1-1-input"
+                                    placeholder="имя"
+                                />
+                                <input
+                                    class="quiz-input"
+                                    id="quiz1-2-input"
+                                    type="tel"
+                                    placeholder="номер телефона"
+                                />
+                            </div>
+                        </div>
+                        <div class="quiz" id="quiz_2">
+                            <span class="question">
+                                <b
+                                    >Ремонт какой недвижимости вас
+                                    интересует?</b
+                                ></span
+                            >
+                            <div class="options">
+                                <select class="select" id="quiz2input">
+                                    <option value="Новостройка">
+                                        Новостройка
+                                    </option>
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Дом/Коттедж">
+                                        Дом/Коттедж
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="quiz" id="quiz_3">
+                            <span class="question">
+                                <b>Укажите общую площадь</b></span
+                            >
+                            <div class="options">
+                                <select class="select" id="quiz3input">
+                                    <option value="<30">до 30 м2</option>
+                                    <option value="30-50">
+                                        от 30 до 50 м2
+                                    </option>
+                                    <option value="50-70">
+                                        от 50 до 70 м2
+                                    </option>
+                                    <option value="70-90">
+                                        от 70 до 90 м2
+                                    </option>
+                                    <option value="90-110">
+                                        от 90 до 110 м2
+                                    </option>
+                                    <option value="110+">от 110 м2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="quiz" id="quiz_4">
+                            <span class="question">
+                                <b>Какой вид ремонта Вас интересует?</b></span
+                            >
+                            <div class="options">
+                                <select class="select" id="quiz4input">
+                                    <option value="Косметический">
+                                        Косметический
+                                    </option>
+                                    <option value="Капитальный">
+                                        Капитальный
+                                    </option>
+                                    <option value="Дизайнерский">
+                                        Дизайнерский
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="calculate-button glow-on-hover">
+                            Рассчитать стоимость
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section slider">
+            <div class="wrapper">
+                <span class="wrapper-header"><b>Примеры</b> наших работ</span>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio_photos">
+                                <div class="row">
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-1.jpg"
+                                            onclick="myFunction(this, 1);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-2.jpg"
+                                            onclick="myFunction(this, 1);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-3.jpg"
+                                            onclick="myFunction(this, 1);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-3.jpg"
+                                            onclick="myFunction(this, 1);"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="container-image">
+                                    <!-- Expanded image -->
+                                    <img
+                                        id="expandedImg 1"
+                                        src="assets/img/portfolio/download-1.jpg"
+                                    />
+                                    <!-- Image text -->
+                                    <div id="imgtext"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-description">
+                                <h4>Ремонт 2х комнатной квартиры</h4>
+                                <span class="portfolio-address">адрес 1</span>
+                                <span class="potfolio-todo">Описание:</span>
+                                <span
+                                    >задача:
+                                    <ul>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                    </ul>
+                                </span>
+                                <div class="portfolio-speed">
+                                    <div class="portfolio-speed_div">
+                                        <b>Площадь</b>
+                                        <span>90 м2</span>
+                                    </div>
+                                    <div class="portfolio-speed_div">
+                                        <b>Сроки</b>
+                                        <span>2 месяца</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio_photos">
+                                <div class="row">
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-1.jpg"
+                                            onclick="myFunction(this, 2);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-2.jpg"
+                                            onclick="myFunction(this, 2);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-3.jpg"
+                                            onclick="myFunction(this, 2);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-3.jpg"
+                                            onclick="myFunction(this, 2);"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="container-image">
+                                    <!-- Expanded image -->
+                                    <img
+                                        id="expandedImg 2"
+                                        src="assets/img/portfolio/download-1.jpg"
+                                    />
+                                    <!-- Image text -->
+                                    <div id="imgtext"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-description">
+                                <h4>Ремонт 2х комнатной квартиры</h4>
+                                <span class="portfolio-address">адрес 1</span>
+                                <b>Описание:</b>
+                                <span
+                                    >задача:
+                                    <ul>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                    </ul>
+                                </span>
+                                <div class="portfolio-speed">
+                                    <div class="portfolio-speed_div">
+                                        <b>Площадь</b>
+                                        <span>90 м2</span>
+                                    </div>
+                                    <div class="portfolio-speed_div">
+                                        <b>Сроки</b>
+                                        <span>2 месяца</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio_photos">
+                                <div class="row">
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-1.jpg"
+                                            onclick="myFunction(this, 3);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-2.jpg"
+                                            onclick="myFunction(this, 3);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-3.jpg"
+                                            onclick="myFunction(this, 3);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/download-3.jpg"
+                                            onclick="myFunction(this, 3);"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="container-image">
+                                    <!-- Expanded image -->
+                                    <img
+                                        id="expandedImg 3"
+                                        src="assets/img/portfolio/download-1.jpg"
+                                    />
+                                    <!-- Image text -->
+                                    <div id="imgtext"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-description">
+                                <h4>Ремонт 2х комнатной квартиры</h4>
+                                <span class="portfolio-address">адрес 1</span>
+                                <b>Описание:</b>
+                                <span
+                                    >задача:
+                                    <ul>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                        <li>Демонтажные работы</li>
+                                    </ul>
+                                </span>
+                                <div class="portfolio-speed">
+                                    <div class="portfolio-speed_div">
+                                        <b>Площадь</b>
+                                        <span>90 м2</span>
+                                    </div>
+                                    <div class="portfolio-speed_div">
+                                        <b>Сроки</b>
+                                        <span>2 месяца</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrapper">
+                <span class="wrapper-header"><b>Частые</b> вопросы</span>
+                <div class="accordion-container">
+                    <div class="accordion-text">
+                        <button class="accordion-button">Section 1</button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+
+                        <button class="accordion-button">Section 2</button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+
+                        <button class="accordion-button">Section 3</button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/FAQ.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <section class="section contacts">
+            <div class="wrapper">
+                <span class="wrapper-header"><b>Наши</b> контакты</span>
+                <div class="contacts-block">
+                    <div class="contacts">
+                        <div>
+                            <a href="tel:+79781761313"
+                                ><i class="fa-solid fa-phone"></i>
+                                +79781761313</a
+                            >
+                        </div>
+                        <div>
+                            <a href="https://telegram.me/+79781761313"
+                                ><i class="fa-brands fa-telegram"></i>
+                                telegram</a
+                            >
+                        </div>
+                        <div>
+                            <a href="https://wa.me/+79781761313"
+                                ><i class="fa-brands fa-whatsapp"></i>
+                                whatsApp</a
+                            >
+                        </div>
+                        <div>
+                            <a href="mailto:mail@example.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span> e-mail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <span>
+                            <b>График работы:</b>
+                            <i class="fa-solid fa-clock"></i>
+                            <br /><span>Пн - Пт: 8.00 - 18.00</span> <br /><span
+                                >Сб-Вс: выходной</span
+                            >
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--scripts go here-->
+        <script
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/057add63b5.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                slidesPerView: "auto",
+                direction: "horizontal",
+                // loop: true,
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                },
+            });
+        </script>
+        <script src="./js/index.js"></script>
+        <script src="./js/accordion.js"></script>
+    </body>
+</html>
