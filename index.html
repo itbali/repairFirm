@@ -11,124 +11,71 @@
         <link href="./css/galery.css" rel="stylesheet" />
         <link href="./css/swiper.css" rel="stylesheet" />
         <link href="./css/accordion.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
         <title>Ремонт квартир и домов под ключ</title>
     </head>
     <body>
-        <section class="section landing">
-            <div class="wrapper">
-                <div class="header-container">
-                    <div>
-                        <img class="logo-img" src="./assets/img/logo.jpeg" />
-                        <span class="logo-title">
-                            <b>Pro</b><span>dom</span>
-                        </span>
-                    </div>
-                    <span class="rem1"
-                        >Ремонт квартир и коттеджей <br />
-                        под ключ в Севастополе</span
-                    >
-                    <a class="whatsApp-call" href="https://wa.me/+79781761313">
-                        <img alt="" src="" />Написать нам</a
-                    >
-                    <div>
-                        <h3 class="header-contact">
-                            <span class="weWork">Звоните, мы работаем </span>
-                            <span class="">Пн-Пт: 9.00-18.00</span>
-                            <a href="tel:+79781761313">+7(978)176-13-13</a>
-                        </h3>
-                    </div>
+        <section>
+            <div class="wrapper header">
+                <div>
+                    <img class="logo-img" src="./assets/img/pro-dom-logo.png" />
                 </div>
-                <div class="main-content">
-                    <div class="content">
-                        <h1>
-                            Сколько стоит сделать ремонт <br />
-                            в вашей квартире?
-                        </h1>
-                        <div class="benefits">
-                            <div class="icons">
-                                <div class="icon-container">
-                                    <img
-                                        class="icon-img"
-                                        alt=""
-                                        src="./assets/img/s1-im1.png"
-                                    />
-                                    <span class="icon-text"
-                                        ><b>Рассчитаем</b> стоимость объекта с
-                                        материалами <br />
-                                        и работой</span
-                                    >
-                                </div>
-                                <div class="icon-container">
-                                    <img
-                                        class="icon-img"
-                                        alt=""
-                                        src="./assets/img/s1-im2.png"
-                                    />
-                                    <span class="icon-text"
-                                        ><b
-                                            >Подготовим дизайн-проект
-                                            помещения</b
-                                        >
-                                        <br />
-                                        при необходимости</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="calculate-price">
-                                <span class="calculate-header"
-                                    >Пройдите простой тест за 30 секунд и <br />
-                                    узнайте стоимость и сроки <br />
-                                    с точностью 95%</span
-                                >
-                                <div class="button-container">
-                                    <button
-                                        class="calculate-button glow-on-hover"
-                                        onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})"
-                                    >
-                                        Рассчитать стоимость
-                                    </button>
-                                    <div class="icon-container">
-                                        <img
-                                            class="icon-img"
-                                            alt=""
-                                            src="./assets/img/s1-im3.png"
-                                        />
-                                        <span
-                                            ><b
-                                                >Займет не <br />больше 1
-                                                минуты</b
-                                            ></span
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="border"></span>
-                        </div>
+                <h3 class="header-contact">
+                    <a href="tel:+79781761313">+7 (978) 176-13-13</a>
+                    <a
+                        class="whatsApp-call bordersAndPandings"
+                        href="https://wa.me/+79781761313"
+                    >
+                        <span>Написать нам</span>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </h3>
+            </div>
+        </section>
+        <section class="section">
+            <div class="firstPage">
+                <div class="leftBlockMain">
+                    <h1>
+                        Сервис <br />по ремонту <br />
+                        квартир
+                    </h1>
+                    <span
+                        >Осуществляем ремонт квартир и коттеджей любой сложности
+                        под ключ в севастополе с гарантией на выполненные
+                        работы.</span
+                    >
+                    <hr />
+                    <span
+                        class="goToContactsButton"
+                        onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})"
+                        >контакты компании</span
+                    >
+                </div>
+                <div class="rightBlockMain">
+                    <div class="rightBlockButtons">
+                        <span>Рассчитать стоимость ремонта и материалов</span>
+                        <button
+                            class="bordersAndPandings roundedButtons"
+                            onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})"
+                        >
+                            калькулятор
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section quiz" id="quiz">
             <div class="wrapper quiz-content">
-                <span class="wrapper-header">
-                    <b>Рассчитайте стоимость</b><br /><span
-                        >ответив всего на 6 вопросов</span
-                    >
-                </span>
                 <div class="calculating-block">
-                    <aside class="manager">
-                        <div class="online-block">
-                            <span class="manager-name">Алексей</span>
-                            <span class="online">online</span>
-                        </div>
-                        <span>Старший менеджер</span>
-                        <span>
-                            <b>Пройдите этот небольшой опрос</b> и я лично для
-                            Вас <b>рассчитаю стоимость</b> ремонта вашей
-                            квартиры</span
-                        >
-                    </aside>
                     <div class="quiz-container">
+                        <span class="wrapper-header"
+                            >Рассчитать стоимость
+                        </span>
                         <div class="quiz" id="quiz_1">
                             <span class="question">
                                 <b>Представьтесь пожалуйста</b></span
@@ -211,6 +158,7 @@
                             Рассчитать стоимость
                         </button>
                     </div>
+                    <aside class="manager"></aside>
                 </div>
             </div>
         </section>
@@ -449,7 +397,7 @@
                 </div>
             </div>
         </section>
-        <section class="section contacts">
+        <section class="section contacts" id="contacts">
             <div class="wrapper">
                 <span class="wrapper-header"><b>Наши</b> контакты</span>
                 <div class="contacts-block">

@@ -1,3 +1,20 @@
+:root {
+    --main-color: #795548;
+    --main-color-hover: rgba(121, 85, 72, 0.75);
+    --primary-color: #ffffff;
+    --primary-color-opacity: rgba(255, 255, 255, 0.85);
+    --text-primary-color: #282828;
+
+    --border-color: rgba(121, 85, 72, 0.2);
+    --border-radius: 12px 0;
+
+    --font-family: Raleway, system-ui, -apple-system, Arial, sans-serif;
+    --giant-font-size: 64px;
+    --medium-font-size: 24px;
+    --small-font-size: 18px;
+    --light-visibility-opacity: 0.2;
+}
+
 a {
     color: black;
     font-style: normal;
@@ -6,8 +23,8 @@ a {
 
 .section {
     width: 100%;
-    font-family: sans-serif;
-    color: #282828;
+    font-family: var(--font-family);
+    color: var(--text-primary-color);
     margin-bottom: 100px;
 }
 
@@ -15,188 +32,10 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0 12vw;
-}
 
-.landing {
-    background-image: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.5),
-            rgb(255, 255, 255)
-        ),
-        url("../assets/img/background.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.header-container {
-    padding: 0.5em;
-    border-radius: 15px;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    height: 50px;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.5);
-}
-
-.header-container > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.header-container .logo-img {
-    height: 50px;
-    border-radius: 5px;
-}
-
-.header-container .logo-title {
-    padding-left: 10px;
-}
-
-.rem1 {
-    padding-left: 20px;
-}
-
-.whatsApp-call {
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 10px 10px;
-}
-
-.header-contact {
-    display: flex;
-    flex-direction: column;
-}
-
-.weWork {
-    font-size: 0.75em;
-}
-
-.main-content {
-    margin-top: 100px;
-    display: flex;
-    width: 100%;
-}
-
-.main-content .benefits {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-content .benefits .icons {
-    display: flex;
-    flex-direction: row;
-}
-
-.icon-container {
-    display: flex;
-    flex-direction: column;
-    margin-right: 60px;
-    font-size: 14px;
-}
-
-.button-container .icon-container {
-    flex-direction: row;
-    align-items: center;
-}
-
-.icon-img {
-    height: 62px;
-    width: fit-content;
-}
-
-.icon-text {
-    font-size: 17px;
-    font-weight: 100;
-    letter-spacing: 0.35px;
-    margin-top: 15px;
-}
-
-.main-content .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.main-content .content h1 {
-    align-self: start;
-    font-size: 44px;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
-.calculate-price {
-    margin-top: 40px;
-}
-
-.calculate-header {
-    font-size: 27px;
-    font-weight: 300;
-}
-
-.button-container {
-    margin-top: 30px;
-    display: flex;
-}
-
-.calculate-button {
-    text-transform: uppercase;
-    font-stretch: 100%;
-    font-weight: 600;
-    letter-spacing: 1.4px;
-    font-size: 26px;
-    padding: 30px 60px 40px;
-    margin-right: 20px;
-    box-shadow: 0px 19px 49px 0 #fe585119, 0px 4px 0 0 #2b9a3b;
-}
-
-/*Button animations */
-
-.glow-on-hover {
-    /*width: 220px;*/
-    /*height: 50px;*/
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: "";
-    background: linear-gradient(45deg, #00ffd9, #48ff00, #006fff, #00ffd9);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 1;
-    /*opacity: 0;*/
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: #ffffff;
-}
-
-/* QUIZ SECTION */
-/* QUIZ SECTION */
-/* QUIZ SECTION */
-/* QUIZ SECTION */
-/* QUIZ SECTION */
-
-.quiz {
-    margin-bottom: 30px;
+    @media screen and (min-width: 768px) and (max-width: 1000px) {
+        margin: 0 8vw;
+    }
 }
 .wrapper-header {
     font-size: 50px;
@@ -205,84 +44,213 @@ a {
     text-align: center;
 }
 
-.quiz-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 20px #19191926;
+.bordersAndPandings {
+    border: 0;
+    border-radius: var(--border-radius);
+    padding: 10px 30px;
+    transition: 0.3s;
 }
-
-.calculating-block {
-    padding-top: 29px;
+/* FIRST PAGE */
+/* FIRST PAGE */
+/* FIRST PAGE */
+/* FIRST PAGE */
+.header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24vw);
     display: flex;
     flex-direction: row;
-    padding: 30px;
-}
-
-.calculating-block .manager {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
     justify-content: space-between;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 15px 20px;
-    margin-top: 100px;
+    padding-top: 30px;
+    @media screen and (min-width: 768px) and (max-width: 1000px) {
+        width: calc(100% - 16vw);
+    }
+
+    div {
+        width: 50%;
+    }
+    img {
+        max-height: 70px;
+        width: fit-content;
+    }
+
+    .whatsApp-call {
+        font-family: var(--font-family);
+        margin-left: 15px;
+        background-color: var(--main-color);
+        color: var(--primary-color);
+        position: relative;
+        &:hover {
+            background-color: var(--main-color-hover);
+        }
+        i {
+            animation: shine2 2s infinite;
+            padding-left: 5px;
+            font-size: var(--medium-font-size);
+        }
+    }
 }
 
-.online-block {
-    justify-content: space-between;
-    align-items: center;
+.firstPage {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .leftBlockMain {
+        padding: 100px 30px 100px 12vw;
+        width: 50%;
+        height: 100%;
+        border: 1px solid var(--border-color);
+        h1 {
+            font-size: var(--giant-font-size);
+            line-height: 76px;
+            font-weight: 500;
+            margin-bottom: 100px;
+        }
+        hr {
+            opacity: var(--light-visibility-opacity);
+        }
+        span {
+            box-sizing: border-box;
+            display: flex;
+            max-width: 330px;
+            padding: 30px;
+            padding-left: 0;
+            margin-bottom: 30px;
+            font-size: var(--small-font-size);
+        }
+        .goToContactsButton {
+            cursor: pointer;
+            transition: 300ms;
+            border-radius: var(--border-radius);
+            width: fit-content;
+            padding: 15px 30px;
+            text-align: center;
+            margin-top: 100px;
+            border: 1px solid var(--border-color);
+            &:hover {
+                transition: 300ms;
+                border-radius: var(--border-radius);
+                background-color: var(--main-color-hover);
+                color: var(--primary-color);
+            }
+        }
+    }
+    .rightBlockMain {
+        display: flex;
+        width: 50%;
+        border-radius: 60px 0 0 0;
+        padding-right: 12vw;
+        background: url("./../assets/img/intro.jpg") no-repeat 50% / cover;
+        .rightBlockButtons {
+            font-size: var(--medium-font-size);
+            height: fit-content;
+            align-self: flex-end;
+            display: flex;
+            padding: 15px;
+            flex-direction: column;
+            gap: 15px;
+            background-color: var(--primary-color-opacity);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            border-right-width: 0;
+            border-top-width: 0;
+            text-align: center;
+            align-items: center;
+            span {
+                margin-top: 20px;
+            }
+            .roundedButtons {
+                text-decoration: to-upper-case;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 60px;
+                margin: 20px 0;
+                color: var(--primary-color);
+                background-color: var(--main-color);
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 1.16;
+                width: fit-content;
+                &:hover {
+                    background-color: var(--main-color-hover);
+                }
+            }
+        }
+    }
 }
 
-.online {
-    width: 6.25rem;
-    height: 2.5rem;
-    background-color: #4ec35a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #fff;
-    border-radius: 10px;
-}
+/* QUIZ SECTION */
+/* QUIZ SECTION */
+/* QUIZ SECTION */
+/* QUIZ SECTION */
+/* QUIZ SECTION */
 
-.online::before {
-    width: 0.5rem;
-    height: 0.438rem;
-    background-color: #fff;
-    margin-right: 0.375rem;
-    content: "";
-    border-radius: 50%;
-    animation: shine2 1s cubic-bezier(1, 0, 0, 1) infinite;
-}
+.section.quiz {
+    padding-top: 100px;
+    margin-bottom: 100px;
 
-.question {
-    font-size: 24px;
-    font-weight: 400;
-}
+    .quiz-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid var(--border-color);
+        border-radius: 60px 0;
+        // box-shadow: 0px 0px 20px 20px #19191926;
 
-.quiz-container {
-    margin-left: 30px;
-    margin-top: 100px;
-}
+        .calculating-block {
+            display: flex;
+            flex-direction: row;
+            .quiz-container {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
 
-.quiz-input {
-    width: 100%;
-    border: 0;
-}
-
-.options {
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgb(167, 167, 167);
-}
-
-.select {
-    border: 0;
-    width: 100%;
+                .wrapper-header {
+                    margin-bottom: 50px;
+                    text-align: start;
+                    font-size: var(--giant-font-size);
+                }
+                .quiz {
+                    display: block;
+                    margin-bottom: 20px;
+                    border-radius: var(--border-radius);
+                    border: 1px solid var(--border-color);
+                    padding: 10px;
+                    .question {
+                        font-size: var(--medium-font-size);
+                        font-weight: 400;
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                    .options {
+                        .quiz-input {
+                            border: 0;
+                        }
+                        .select {
+                            border: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .manager {
+                background: url("./../assets/img/calculate\ bg.jpg") no-repeat
+                    50% / cover;
+                background-position-x: left;
+                display: flex;
+                flex-direction: column;
+                flex-basis: 50%;
+                justify-content: space-between;
+                background-color: #f7f7f7;
+                border-radius: 60px 0;
+            }
+        }
+    }
 }
 
 /* PORTFOLIO SECTION  */
@@ -336,18 +304,6 @@ a {
 // ANIMATION SECTION
 // ANIMATION SECTION
 
-.glow-on-hover:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #36c14a;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
 @keyframes glowing {
     0% {
         background-position: 0 0;
@@ -364,17 +320,17 @@ a {
     0% {
         opacity: 0;
     }
-    100% {
+    50% {
         opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
 /* Tablets */
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
-    .wrapper {
-        margin: 0 8vw;
-    }
     .rem1 {
         font-size: 14px;
     }
