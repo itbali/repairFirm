@@ -1,8 +1,7 @@
 /* The grid: Four equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 150px;
-    height: 113px;
+    width: 90px;
+    height: 60px;
     margin: 10px;
 }
 
@@ -10,22 +9,18 @@
 .column img {
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     cursor: pointer;
+    transition: 300ms;
     border: 1px solid rgb(243, 243, 243);
-    border-radius: 10px;
-    box-shadow: 7px 7px 10px rgb(211 211 211);
+    border-radius: var(--border-radius);
 }
 
 .column img:hover {
+    box-shadow: 7px 7px 10px rgb(211 211 211);
     opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+    transition: 300ms;
+    scale: 1.3;
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
@@ -36,12 +31,12 @@
 
 .container-image img {
     border: 1px solid rgb(243, 243, 243);
-    border-radius: 10px;
-    width: 660px;
-    height: 372px;
+    border-radius: var(--giant-border-radius);
+    width: 580px;
+    height: 350px;
     margin-left: 10px;
     margin-top: 10px;
-    box-shadow: 7px 7px 10px rgb(211 211 211);
+    /* box-shadow: 0 0 10px 5px rgb(211 211 211); */
 }
 /* Expanding image text */
 #imgtext {
