@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+hr {
+  opacity: var(--light-visibility-opacity);
+}
+
 .section {
   width: 100%;
   font-family: var(--font-family);
@@ -37,11 +41,6 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0 12vw;
-}
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-  .wrapper {
-    margin: 0 8vw;
-  }
 }
 
 .wrapper-header {
@@ -58,10 +57,10 @@ a {
   transition: 0.3s;
 }
 
-/* FIRST PAGE */
-/* FIRST PAGE */
-/* FIRST PAGE */
-/* FIRST PAGE */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
 .header {
   position: absolute;
   z-index: 100;
@@ -72,11 +71,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 30px;
-}
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-  .header {
-    width: calc(100% - 16vw);
-  }
 }
 .header div {
   width: 50%;
@@ -101,6 +95,10 @@ a {
   font-size: var(--medium-font-size);
 }
 
+/* FIRST PAGE */
+/* FIRST PAGE */
+/* FIRST PAGE */
+/* FIRST PAGE */
 .firstPage {
   display: flex;
   flex-direction: row;
@@ -117,9 +115,6 @@ a {
   line-height: 76px;
   font-weight: 500;
   margin-bottom: 100px;
-}
-.firstPage .leftBlockMain hr {
-  opacity: var(--light-visibility-opacity);
 }
 .firstPage .leftBlockMain span {
   box-sizing: border-box;
@@ -173,6 +168,7 @@ a {
   margin-top: 20px;
 }
 .firstPage .rightBlockMain .rightBlockButtons .roundedButtons {
+  cursor: pointer;
   text-decoration: to-upper-case;
   display: flex;
   flex-direction: column;
@@ -233,9 +229,6 @@ a {
   display: block;
   margin-bottom: 10px;
 }
-.section.quiz .quiz-content .calculating-block .quiz-container .quiz hr {
-  opacity: var(--light-visibility-opacity);
-}
 .section.quiz .quiz-content .calculating-block .quiz-container .quiz .options .quiz-input {
   border: 0;
 }
@@ -244,6 +237,7 @@ a {
   width: 100%;
 }
 .section.quiz .quiz-content .calculating-block .quiz-container .calculate-button {
+  cursor: pointer;
   font-family: var(--font-family);
   background-color: var(--main-color);
   color: var(--primary-color);
@@ -564,18 +558,33 @@ a {
   margin: 35px 0;
 }
 
-.contacts-block {
+.contacts .contacts-block {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
 }
-.contacts-block i {
+.contacts .contacts-block i {
+  color: var(--main-color);
   padding: 10px;
 }
-
-.contacts {
+.contacts .footer_container {
+  opacity: calc(1 - var(--light-visibility-opacity));
+  margin-top: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 1px solid var(--border-color);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding-top: 40px;
+}
+.contacts .footer_container img {
+  max-height: 70px;
+  width: fit-content;
 }
 
 @keyframes glowing {
@@ -601,7 +610,10 @@ a {
   }
 }
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+/* Tablets */
+/* Tablets */
+/* Tablets */
+@media screen and (min-width: 880px) and (max-width: 1250px) {
   .rem1 {
     font-size: 14px;
   }
@@ -612,5 +624,251 @@ a {
 
   .header-contact {
     font-size: 17px;
+  }
+
+  .wrapper-header {
+    font-size: calc(var(--giant-font-size) * 0.7);
+  }
+
+  /* HEADER */
+  /* HEADER */
+  /* HEADER */
+  /* HEADER */
+  .header {
+    width: calc(100% - 21vw);
+  }
+  .header div {
+    width: 50%;
+  }
+  .header img {
+    max-height: 70px;
+    width: fit-content;
+  }
+  .header .header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--medium-font-size);
+  }
+  .header .header-contact .whatsApp-call {
+    font-family: var(--font-family);
+    margin-left: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    position: relative;
+  }
+  .header .header-contact .whatsApp-call:hover {
+    background-color: var(--main-color-hover);
+  }
+  .header .header-contact .whatsApp-call i {
+    animation: shine2 2s infinite;
+    padding-left: 5px;
+    font-size: var(--medium-font-size);
+  }
+
+  /* FIRST PAGE */
+  /* FIRST PAGE */
+  /* FIRST PAGE */
+  /* FIRST PAGE */
+  .firstPage .leftBlockMain {
+    padding: 100px 30px 20px 12vw;
+  }
+  .firstPage .leftBlockMain h1 {
+    font-size: var(--giant-font-size);
+    line-height: 56px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  .firstPage .leftBlockMain .goToContactsButton {
+    margin-top: 70px;
+  }
+  .firstPage .rightBlockMain {
+    display: flex;
+    width: 50%;
+    border-radius: 60px 0 0 0;
+    padding-right: 12vw;
+    background: url("./../assets/img/intro.jpg") no-repeat 50%/cover;
+  }
+  .firstPage .rightBlockMain .rightBlockButtons {
+    font-size: calc(var(--medium-font-size) * 0.7);
+    padding: 10px;
+    gap: 10px;
+  }
+  .firstPage .rightBlockMain .rightBlockButtons span {
+    margin-top: 10px;
+  }
+  .firstPage .rightBlockMain .rightBlockButtons .roundedButtons {
+    font-size: calc(var(--medium-font-size) * 0.7);
+  }
+  .firstPage .rightBlockMain .rightBlockButtons .roundedButtons:hover {
+    background-color: var(--main-color-hover);
+  }
+
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  #quiz .calculating-block .quiz-container .wrapper-header {
+    padding-top: 0;
+  }
+  #quiz .calculating-block .quiz-container .question {
+    font-size: calc(var(--medium-font-size) * 0.7);
+  }
+  #quiz .calculating-block .quiz-container .calculate-button {
+    font-size: calc(var(--medium-font-size) * 0.7);
+    font-weight: 600;
+  }
+  #quiz .calculating-block .manager {
+    flex-basis: 60%;
+  }
+
+  /* PORTFOLIO SECTION  */
+  /* PORTFOLIO SECTION  */
+  /* PORTFOLIO SECTION  */
+  /* PORTFOLIO SECTION  */
+  .section.slider .portfolio_photos .container-image img {
+    width: 480px;
+    height: 300px;
+  }
+
+  /* HOW WE WORK  */
+  /* HOW WE WORK  */
+  /* HOW WE WORK  */
+  /* HOW WE WORK  */
+  .howWeWork .info {
+    padding-bottom: 0;
+  }
+}
+/* Mobile phones */
+/* Mobile phones */
+/* Mobile phones */
+/* Mobile phones */
+@media screen and (max-width: 879px) {
+  .wrapper-header {
+    font-size: calc(var(--giant-font-size) * 0.7);
+  }
+
+  /* HEADER */
+  /* HEADER */
+  /* HEADER */
+  /* HEADER */
+  .header {
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-colord);
+  }
+  .header div {
+    width: auto;
+  }
+  .header div img {
+    max-height: 45px;
+  }
+  .header .header-contact {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    margin-top: 0;
+  }
+  .header .header-contact .whatsApp-call {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  /* FIRST PAGE */
+  /* FIRST PAGE */
+  /* FIRST PAGE */
+  /* FIRST PAGE */
+  .firstPage {
+    flex-direction: column;
+  }
+  .firstPage .leftBlockMain {
+    border: 0;
+    width: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    line-height: 1em;
+  }
+  .firstPage .leftBlockMain h1 {
+    font-size: calc(var(--giant-font-size) * 0.7);
+    margin-bottom: 20px;
+  }
+  .firstPage .leftBlockMain h1 br:not(:last-child) {
+    display: none;
+  }
+  .firstPage .leftBlockMain .goToContactsButton {
+    margin-top: 30px;
+  }
+  .firstPage .rightBlockMain {
+    background: #e2d045;
+    background: linear-gradient(48deg, #fdda64, #f99269, #d85b5b);
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: var(--giant-border-radius);
+  }
+  .firstPage .rightBlockMain .rightBlockButtons {
+    gap: 0;
+    color: var(--primary-color);
+    background: none;
+  }
+
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  /* QUIZ SECTION */
+  #quiz .quiz-content .calculating-block .manager {
+    display: none;
+  }
+
+  /* PORTFOLIO SECTION  */
+  /* PORTFOLIO SECTION  */
+  /* PORTFOLIO SECTION  */
+  /* PORTFOLIO SECTION  */
+  .section.slider .swiper-slide {
+    flex-direction: column;
+  }
+  .section.slider .swiper-slide .portfolio-description {
+    flex-direction: column;
+  }
+
+  /* HOW WE WORK  */
+  /* HOW WE WORK  */
+  /* HOW WE WORK  */
+  /* HOW WE WORK  */
+  .howWeWork .info {
+    padding-bottom: 0;
+  }
+  .howWeWork .info .info__holder {
+    border: 1px solid var(--border-color);
+    border-radius: var(--giant-border-radius);
+    padding-bottom: 0;
+  }
+  .howWeWork .info .info__holder .info__block {
+    padding-top: 0;
+  }
+
+  .contacts .contacts-block div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+  .contacts .contacts-block div a span {
+    font-size: 0;
+  }
+  .contacts .footer_container {
+    margin-top: 40px;
+    gap: 30px;
   }
 }
