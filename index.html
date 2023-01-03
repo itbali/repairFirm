@@ -86,11 +86,12 @@
                                     class="quiz-input"
                                     id="quiz1-1-input"
                                     placeholder="имя"
+                                    type="text"
                                 />
                                 <input
                                     class="quiz-input"
                                     id="quiz1-2-input"
-                                    type="tel"
+                                    type="number"
                                     placeholder="номер телефона"
                                 />
                             </div>
@@ -102,6 +103,9 @@
                             <hr />
                             <div class="options">
                                 <select class="select" id="quiz2input">
+                                    <option value="Не выбрано">
+                                        Не выбрано
+                                    </option>
                                     <option value="Новостройка">
                                         Новостройка
                                     </option>
@@ -117,6 +121,9 @@
                             <hr />
                             <div class="options">
                                 <select class="select" id="quiz3input">
+                                    <option value="Не выбрано">
+                                        Не выбрано
+                                    </option>
                                     <option value="<30">до 30 м2</option>
                                     <option value="30-50">
                                         от 30 до 50 м2
@@ -141,6 +148,9 @@
                             <hr />
                             <div class="options">
                                 <select class="select" id="quiz4input">
+                                    <option value="Не выбрано">
+                                        Не выбрано
+                                    </option>
                                     <option value="Косметический">
                                         Косметический
                                     </option>
@@ -153,7 +163,11 @@
                                 </select>
                             </div>
                         </div>
-                        <button class="calculate-button glow-on-hover">
+                        <button
+                            onclick="sendMessage"
+                            class="calculate-button glow-on-hover"
+                            id="calculatePriceButton"
+                        >
                             Рассчитать стоимость
                         </button>
                     </div>
@@ -741,6 +755,9 @@
         ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- telegram send message script -->
+        <script src="./js/sendMessage.js"></script>
         <script>
             const swiper = new Swiper(".swiper", {
                 slidesPerView: "auto",
