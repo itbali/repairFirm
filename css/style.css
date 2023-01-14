@@ -766,6 +766,7 @@ hr {
   }
   .header div img {
     max-height: 45px;
+    max-width: 101px;
   }
   .header .header-contact {
     display: flex;
@@ -790,7 +791,7 @@ hr {
     border: 0;
     width: auto;
     padding-top: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .firstPage .leftBlockMain h1 {
     font-size: calc(var(--giant-font-size) * 0.7);
@@ -804,6 +805,7 @@ hr {
     margin-top: 30px;
   }
   .firstPage .rightBlockMain {
+    margin: 0 12vw;
     background: #e2d045;
     background: linear-gradient(48deg, #fdda64, #f99269, #d85b5b);
     width: fit-content;
@@ -817,6 +819,10 @@ hr {
     border: 0;
     color: var(--primary-color);
     background: none;
+  }
+  .firstPage .rightBlockMain .rightBlockButtons span {
+    color: var(--text-primary-color);
+    font-weight: 500;
   }
 
   /* QUIZ SECTION */
@@ -896,6 +902,9 @@ hr {
     padding: 0 20px 20px 20px;
   }
 
+  .contacts .contacts-block {
+    flex-wrap: wrap;
+  }
   .contacts .contacts-block div a {
     display: flex;
     align-items: center;
@@ -906,8 +915,8 @@ hr {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 100px;
-    height: 100px;
+    width: 27vw;
+    height: 27vw;
     font-size: 50px;
   }
   .contacts .contacts-block div a span {

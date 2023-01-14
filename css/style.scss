@@ -831,6 +831,7 @@ hr {
             width: auto;
             img {
                 max-height: 45px;
+                max-width: 101px;
             }
         }
         .header-contact {
@@ -858,7 +859,7 @@ hr {
             border: 0;
             width: auto;
             padding-top: 150px;
-            padding-bottom: 50px;
+            padding-bottom: 30px;
             h1 {
                 font-size: calc(var(--giant-font-size) * 0.7);
                 margin-bottom: 20px;
@@ -872,6 +873,7 @@ hr {
             }
         }
         .rightBlockMain {
+            margin: 0 12vw;
             background: rgb(226, 208, 69);
             background: linear-gradient(48deg, #fdda64, #f99269, #d85b5b);
             width: fit-content;
@@ -885,6 +887,10 @@ hr {
                 border: 0;
                 color: var(--primary-color);
                 background: none;
+                span {
+                    color: var(--text-primary-color);
+                    font-weight: 500;
+                }
             }
         }
     }
@@ -995,6 +1001,7 @@ hr {
 
     .contacts {
         .contacts-block {
+            flex-wrap: wrap;
             div {
                 a {
                     display: flex;
@@ -1006,8 +1013,8 @@ hr {
                     cursor: pointer;
                     display: flex;
                     flex-direction: column;
-                    width: 100px;
-                    height: 100px;
+                    width: 27vw;
+                    height: 27vw;
                     font-size: 50px;
                     span {
                         font-size: 0;
