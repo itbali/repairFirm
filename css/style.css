@@ -791,11 +791,11 @@ hr {
     width: auto;
     padding-top: 150px;
     padding-bottom: 50px;
-    line-height: 1em;
   }
   .firstPage .leftBlockMain h1 {
     font-size: calc(var(--giant-font-size) * 0.7);
     margin-bottom: 20px;
+    line-height: 56px;
   }
   .firstPage .leftBlockMain h1 br:not(:last-child) {
     display: none;
@@ -806,13 +806,15 @@ hr {
   .firstPage .rightBlockMain {
     background: #e2d045;
     background: linear-gradient(48deg, #fdda64, #f99269, #d85b5b);
-    width: 100%;
+    width: fit-content;
     height: 200px;
     border: 0;
     border-radius: var(--giant-border-radius);
+    padding-right: 0;
   }
   .firstPage .rightBlockMain .rightBlockButtons {
     gap: 0;
+    border: 0;
     color: var(--primary-color);
     background: none;
   }
@@ -822,8 +824,20 @@ hr {
   /* QUIZ SECTION */
   /* QUIZ SECTION */
   /* QUIZ SECTION */
+  #quiz {
+    padding-top: 0;
+  }
   #quiz .quiz-content .calculating-block .manager {
     display: none;
+  }
+  #quiz .quiz-content .calculating-block .quiz-container .quiz .options .quiz-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #quiz .quiz-content .calculating-block .quiz-container .quiz .options .select {
+    width: 100%;
+    padding: 10px;
   }
 
   /* PORTFOLIO SECTION  */

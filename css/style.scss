@@ -826,6 +826,7 @@ hr {
     .header {
         flex-direction: row;
         justify-content: center;
+        border-bottom: 1px solid var(--border-colord);
         div {
             width: auto;
             img {
@@ -844,7 +845,6 @@ hr {
                 // width: fit-content;
             }
         }
-        border-bottom: 1px solid var(--border-colord);
     }
 
     /* FIRST PAGE */
@@ -859,10 +859,10 @@ hr {
             width: auto;
             padding-top: 150px;
             padding-bottom: 50px;
-            line-height: 1em;
             h1 {
                 font-size: calc(var(--giant-font-size) * 0.7);
                 margin-bottom: 20px;
+                line-height: 56px;
                 br:not(:last-child) {
                     display: none;
                 }
@@ -874,12 +874,15 @@ hr {
         .rightBlockMain {
             background: rgb(226, 208, 69);
             background: linear-gradient(48deg, #fdda64, #f99269, #d85b5b);
-            width: 100%;
+            width: fit-content;
+
             height: 200px;
             border: 0;
             border-radius: var(--giant-border-radius);
+            padding-right: 0;
             .rightBlockButtons {
                 gap: 0;
+                border: 0;
                 color: var(--primary-color);
                 background: none;
             }
@@ -893,10 +896,27 @@ hr {
     /* QUIZ SECTION */
 
     #quiz {
+        padding-top: 0;
         .quiz-content {
             .calculating-block {
                 .manager {
                     display: none;
+                }
+                .quiz-container {
+                    .quiz {
+                        .options {
+                            .quiz-input {
+                                width: 100%;
+                                padding: 10px;
+                                margin-bottom: 10px;
+                            }
+                            .select {
+                                width: 100%;
+                                padding: 10px;
+                                // margin-bottom: 10px;
+                            }
+                        }
+                    }
                 }
             }
         }
