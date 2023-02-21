@@ -108,7 +108,7 @@ hr {
   padding: 100px 30px 100px 12vw;
   width: 50%;
   height: 100%;
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .firstPage .leftBlockMain h1 {
   font-size: var(--giant-font-size);
@@ -234,10 +234,17 @@ hr {
   width: 48%;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
+  padding: 0 8px;
 }
 .section.quiz .quiz-content .calculating-block .quiz-container .quiz .options .select {
   border: 0;
   width: 100%;
+}
+.section.quiz .quiz-content .calculating-block .quiz-container .quiz .quiz-error-message {
+  color: red;
+  font-size: var(--small-font-size);
+  margin-top: 5px;
+  display: none;
 }
 .section.quiz .quiz-content .calculating-block .quiz-container .calculate-button {
   cursor: pointer;
@@ -884,7 +891,11 @@ hr {
     border-radius: var(--giant-border-radius);
   }
   .section.slider .swiper-slide .portfolio-description {
-    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section.slider .swiper-slide .portfolio-description h4 {
+    text-align: center;
   }
 
   /* HOW WE WORK  */
@@ -905,6 +916,10 @@ hr {
 
   .contacts .contacts-block {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contacts .contacts-block div {
+    margin: 8px;
   }
   .contacts .contacts-block div a {
     display: flex;

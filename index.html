@@ -92,9 +92,14 @@
                                 <input
                                     class="quiz-input"
                                     id="quiz1-2-input"
-                                    type="number"
+                                    type="tel"
                                     placeholder="номер телефона"
                                 />
+                            </div>
+                            <div 
+                                id="errorMessage" 
+                                class="quiz-error-message">
+                                Некоторые поля заполнены неверно
                             </div>
                         </div>
                         <div class="quiz" id="quiz_2">
@@ -125,7 +130,7 @@
                                     <option value="Не выбрано">
                                         Не выбрано
                                     </option>
-                                    <option value="<30">до 30 м2</option>
+                                    <option value="30 и меньше">до 30 м2</option>
                                     <option value="30-50">
                                         от 30 до 50 м2
                                     </option>
@@ -138,7 +143,7 @@
                                     <option value="90-110">
                                         от 90 до 110 м2
                                     </option>
-                                    <option value="110+">от 110 м2</option>
+                                    <option value="110 и больше">от 110 м2</option>
                                 </select>
                             </div>
                         </div>
@@ -167,7 +172,7 @@
                         <button
                             onclick="sendMessage"
                             class="calculate-button glow-on-hover"
-                            id="calculatePriceButton"
+                            id="calculate-price-button"
                         >
                             Рассчитать стоимость
                         </button>
@@ -224,32 +229,20 @@
                             </div>
 
                             <div class="portfolio-description">
-                                <h4>Ремонт 2х комнатной квартиры</h4>
-                                <span class="portfolio-address">адрес 1</span>
-                                <b>Описание:</b>
+                                <h4>СТУДИЯ ПОД СДАЧУ</h4>
+                                <span class="portfolio-address"
+                                    ><b>ЖК Фиолент Village</b></span
+                                >
+                                <br />
+                                <span><b>стоимость: </b>228 000₽</span>
+                                <br />
+                                <span><b>площадь: </b>27,6 м2</span>
+                                <br />
+                                <br />
                                 <span
-                                    >задача:
-                                    <ul>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                    </ul>
-                                </span>
-                                <div class="portfolio-speed">
-                                    <div class="portfolio-speed_div">
-                                        <b>Площадь</b>
-                                        <span>90 м2</span>
-                                    </div>
-                                    <div class="portfolio-speed_div">
-                                        <b>Сроки</b>
-                                        <span>2 месяца</span>
-                                    </div>
-                                </div>
+                                    >Хотите сэкономить? Мы знаем как это сделать
+                                    практично и не в ущерб качеству.</span
+                                >
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -291,32 +284,25 @@
                                 </div>
                             </div>
                             <div class="portfolio-description">
-                                <h4>Ремонт 2х комнатной квартиры</h4>
-                                <span class="portfolio-address">адрес 1</span>
-                                <b>Описание:</b>
-                                <span
-                                    >задача:
-                                    <ul>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                    </ul>
+                                <h4>ОДНУШКА БЕЗ ДИЗАЙНЕРОВ</h4>
+                                <span class="portfolio-address"
+                                    ><b>ЖК Доброгород</b>
                                 </span>
-                                <div class="portfolio-speed">
-                                    <div class="portfolio-speed_div">
-                                        <b>Площадь</b>
-                                        <span>90 м2</span>
-                                    </div>
-                                    <div class="portfolio-speed_div">
-                                        <b>Сроки</b>
-                                        <span>2 месяца</span>
-                                    </div>
-                                </div>
+                                <br />
+                                <span><b>стоимость: </b>420 000₽</span>
+                                <br />
+                                <span><b>площадь: </b>43,3 м2</span>
+                                <br />
+                                <br />
+                                <span
+                                    >Если решите не привлекать к ремонту
+                                    дизайнеров, мы обязательно поможем Вам с
+                                    выбором комплектующих, поделимся опытом и
+                                    дадим советы исходя из ваших пожеланий и
+                                    особенностей планировки квартиры. И данный
+                                    проект отличный тому пример хорошего вкуса в
+                                    идеальном исполнении.
+                                </span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -358,32 +344,23 @@
                                 </div>
                             </div>
                             <div class="portfolio-description">
-                                <h4>Ремонт 2х комнатной квартиры</h4>
-                                <span class="portfolio-address">адрес 1</span>
-                                <b>Описание:</b>
-                                <span
-                                    >задача:
-                                    <ul>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                        <li>Демонтажные работы</li>
-                                    </ul>
+                                <h4>РЕМОНТ НА РАССТОЯНИИ</h4>
+                                <span class="portfolio-address"></span>
+                                    <b> ЖК Апельсин</b>
                                 </span>
-                                <div class="portfolio-speed">
-                                    <div class="portfolio-speed_div">
-                                        <b>Площадь</b>
-                                        <span>90 м2</span>
-                                    </div>
-                                    <div class="portfolio-speed_div">
-                                        <b>Сроки</b>
-                                        <span>2 месяца</span>
-                                    </div>
-                                </div>
+                                <br />
+                                <span><b>стоимость: </b>667 000₽</span>
+                                <br />
+                                <span><b>площадь: </b>59 м2</span>
+                                <br />
+                                <br />
+                                <span
+                                    >Даже если Вы находитесь в другом городе,
+                                    наша команда сможет реализовать ваши планы
+                                    по ремонту, а современные средства связи
+                                    дадут возможность взаимодействовать и
+                                    наблюдать за всем процессом.
+                                </span>
                             </div>
                         </div>
                     </div>
