@@ -5,7 +5,7 @@
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-primary-color);
     cursor: pointer;
-    padding: 18px;
+    padding: 18px 25px;
     width: 100%;
     text-align: left;
     outline: none;
@@ -23,11 +23,13 @@
 .panel {
     padding: 0 18px;
     background-color: white;
-    display: none;
-    overflow: hidden;
+    overflow: auto;
+    opacity: 0;
+    max-height: 0;
+    transition: 0.3s;
 }
 
-.accordion-button:after {
+.accordion-button:before {
     content: "\02795"; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
@@ -35,7 +37,7 @@
     margin-left: 5px;
 }
 
-.active:after {
+.active:before {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
@@ -57,4 +59,11 @@
 }
 .accordion-container img {
     width: 30%;
+}
+
+.is-active {
+    border-color: #ccc;
+    border-radius: var(--border-radius);
+    opacity: 1;
+    max-height: 500px;
 }

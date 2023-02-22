@@ -12,6 +12,7 @@
         <link href="./css/galery.css" rel="stylesheet" />
         <link href="./css/swiper.css" rel="stylesheet" />
         <link href="./css/accordion.css" rel="stylesheet" />
+        <link href="./css/modal.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -194,25 +195,31 @@
                                 <div class="row">
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-1.jpg"
+                                            src="assets/img/portfolio/1/1.jpg"
                                             onclick="myFunction(this, 1);"
                                         />
                                     </div>
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-2.jpg"
+                                            src="assets/img/portfolio/1/2.jpg"
                                             onclick="myFunction(this, 1);"
                                         />
                                     </div>
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-3.jpg"
+                                            src="assets/img/portfolio/1/3.jpg"
                                             onclick="myFunction(this, 1);"
                                         />
                                     </div>
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-3.jpg"
+                                            src="assets/img/portfolio/1/4.jpg"
+                                            onclick="myFunction(this, 1);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/1/5.jpg"
                                             onclick="myFunction(this, 1);"
                                         />
                                     </div>
@@ -221,7 +228,8 @@
                                     <!-- Expanded image -->
                                     <img
                                         id="expandedImg 1"
-                                        src="assets/img/portfolio/download-1.jpg"
+                                        src="assets/img/portfolio/1/1.jpg"
+                                        onclick="openModal.apply(this);"
                                     />
                                     <!-- Image text -->
                                     <div id="imgtext"></div>
@@ -250,25 +258,31 @@
                                 <div class="row">
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-1.jpg"
+                                            src="assets/img/portfolio/2/1.jpg"
                                             onclick="myFunction(this, 2);"
                                         />
                                     </div>
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-2.jpg"
+                                            src="assets/img/portfolio/2/2.jpg"
                                             onclick="myFunction(this, 2);"
                                         />
                                     </div>
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-3.jpg"
+                                            src="assets/img/portfolio/2/3.jpg"
                                             onclick="myFunction(this, 2);"
                                         />
                                     </div>
                                     <div class="column">
                                         <img
-                                            src="assets/img/portfolio/download-3.jpg"
+                                            src="assets/img/portfolio/2/4.jpg"
+                                            onclick="myFunction(this, 2);"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            src="assets/img/portfolio/2/5.jpg"
                                             onclick="myFunction(this, 2);"
                                         />
                                     </div>
@@ -277,7 +291,8 @@
                                     <!-- Expanded image -->
                                     <img
                                         id="expandedImg 2"
-                                        src="assets/img/portfolio/download-1.jpg"
+                                        src="assets/img/portfolio/2/1.jpg"
+                                        onclick="openModal.apply(this);"
                                     />
                                     <!-- Image text -->
                                     <div id="imgtext"></div>
@@ -326,18 +341,13 @@
                                             onclick="myFunction(this, 3);"
                                         />
                                     </div>
-                                    <div class="column">
-                                        <img
-                                            src="assets/img/portfolio/download-3.jpg"
-                                            onclick="myFunction(this, 3);"
-                                        />
-                                    </div>
                                 </div>
                                 <div class="container-image">
                                     <!-- Expanded image -->
                                     <img
                                         id="expandedImg 3"
                                         src="assets/img/portfolio/download-1.jpg"
+                                        onclick="openModal.apply(this);"
                                     />
                                     <!-- Image text -->
                                     <div id="imgtext"></div>
@@ -638,47 +648,52 @@
                 <span class="wrapper-header">Частые вопросы</span>
                 <div class="accordion-container">
                     <div class="accordion-text">
-                        <button class="accordion-button">Section 1</button>
+                        <button class="accordion-button">Что такое сервис готового жилья?</button>
                         <div class="panel">
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Laborum culpa soluta possimus
-                                nisi quibusdam accusamus iste suscipit fugiat
-                                quis animi hic asperiores facilis repudiandae
-                                mollitia, sit necessitatibus officiis libero
-                                sunt. Laborum, ratione suscipit? Ipsa, ratione
-                                amet vero aliquam vel deserunt provident
-                                similique illo neque repudiandae. Temporibus
-                                sequi cumque rerum officia? Cupiditate totam
-                                corporis dicta explicabo excepturi officiis, nam
-                                exercitationem minus. Iste fuga unde voluptas
-                                expedita quis similique distinctio minus.
-                                Dolorem incidunt nobis rerum obcaecati. Veniam
-                                itaque earum pariatur velit sint sed, voluptates
-                                unde exercitationem totam, quisquam sit
-                                consectetur corrupti quos?
+                                Это налаженная система работы и коммуникации заказчика со всеми исполнителями ремонта по вопросам дизайна, чистовых и черновых материалов, снабжения. Работает через чат в мессенджере. Там происходит вся коммуникация по объекту. Возникающие в процессе вопросы сразу закрываются присутствующими в чате специалистами, при этом все остальные находятся в курсе происходящего, что очень важно, т.к. процесс один. Каждое решение по тому или иному этапу ремонта влияет на следующий шаг. Сервис готового жилья исключает ошибки по причине отсутствия коммуникации и осведомленности исполнителей о работах друг друга и снимает с заказчика многозадачность. Мы всё делаем за вас, а вы просто наблюдаете и в конце наслаждаетесь результатом.
                             </p>
                         </div>
 
-                        <button class="accordion-button">Section 2</button>
+                        <button class="accordion-button">Какие услуги вы предоставляете?</button>
                         <div class="panel">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Aliquid pariatur, quisquam
-                                esse optio et laudantium saepe labore tenetur
-                                ipsa quasi adipisci? Natus mollitia asperiores
-                                corporis, quis quasi nesciunt atque deleniti.
+                                Разработка дизайн-проектов, ремонт помещений, снабжение объекта материалами и комплектующими, приём квартиры у застройщика.
                             </p>
                         </div>
 
-                        <button class="accordion-button">Section 3</button>
+                        <button class="accordion-button">Даете гарантию на работы?</button>
                         <div class="panel">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Error minima nostrum
-                                quibusdam! Velit incidunt consequatur odit aut
-                                illo ut. Possimus repellat, ducimus molestias
-                                cum tempore iusto ipsa debitis quis ex!
+                                Гарантия на работы - год с момента сдачи квартиры. Также можно приобрести расширенную гарантию на 3 года.
+                            </p>
+                        </div>
+
+                        <button class="accordion-button">Кто покупает материалы?</button>
+                        <div class="panel">
+                            <p>
+                                Закупкой материала, как правило, занимаемся мы, но также это можете сделать вы сами. В любом случае, мы следим за поставками, т. к. нам важно понимать, когда придут самостоятельно купленные заказчиком материалы. Поставщик нам не принципиален - наш партнёр или ваш собственный выбор.
+                            </p>
+                        </div>
+
+                        <button class="accordion-button">Кто покупает материалы?</button>
+                        <div class="panel">
+                            <p>
+                                Закупкой материала, как правило, занимаемся мы, но также это можете сделать вы сами. В любом случае, мы следим за поставками, т. к. нам важно понимать, когда придут самостоятельно купленные заказчиком материалы. Поставщик нам не принципиален - наш партнёр или ваш собственный выбор.
+                            </p>
+                        </div>
+
+                        <button class="accordion-button">Если мы живем в другом городе, а квартира в Севастополе, вы сможете сделать в ней ремонт?</button>
+                        <div class="panel">
+                            <p>
+                                Да, для этого мы и создали сервис готового жилья. Подобный опыт у нас есть. Вы можете находиться даже в другой стране и ни разу не приезжать на обьект, на ход работ это не повлияет. Главное, чтобы у вас был интернет и телефонная связь. В чате вы будете видеть, всё что происходит с вашей квартирой. Мы регулярно высылаем фото и видеоотчеты.
+                            </p>
+                        </div>
+
+                        <button class="accordion-button">Помогаете ли с приёмкой квартиры в новостройке?</button>
+                        <div class="panel">
+                            <p>
+                                Да, мы выезжаем на приём квартиры вместе с вами. Видим отклонения и дефекты, фиксируем их и выписываем все замечания. Дальше с этой информацией вы обращаетесь к застройщику за устранением изъянов.
                             </p>
                         </div>
                     </div>
@@ -726,6 +741,12 @@
             </div>
         </section>
 
+        <!-- modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
         <!--scripts go here-->
         <script
             crossorigin="anonymous"
@@ -748,5 +769,6 @@
         </script>
         <script src="./js/index.js"></script>
         <script src="./js/accordion.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

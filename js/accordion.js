@@ -9,10 +9,15 @@ for (i = 0; i < acc.length; i++) {
 
         /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
+        if (panel.classList.contains("is-active")) {
+            panel.classList.remove("is-active");
         } else {
-            panel.style.display = "block";
+            panel.classList.add("is-active");
         }
+        // if (panel.style.display === "block") {
+        //     panel.style.display = "none";
+        // } else {
+        //     panel.style.display = "block";
+        // }
     });
 }

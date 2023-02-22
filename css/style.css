@@ -536,10 +536,13 @@ hr {
   flex-direction: column;
   position: relative;
 }
+.section.slider .swiper-slide .portfolio_photos .container-image img {
+  cursor: pointer;
+}
 .section.slider .swiper-slide .portfolio_photos .row {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: calc(50% - 10px);
   transform: translateX(-50%);
   display: flex;
   flex-wrap: nowrap;
@@ -559,6 +562,7 @@ hr {
 }
 .section.slider .swiper-slide .portfolio-description h4 {
   font-size: 24px;
+  text-align: center;
 }
 .section.slider .swiper-slide .portfolio-address {
   font-size: 16px;
@@ -859,8 +863,9 @@ hr {
   /* PORTFOLIO SECTION  */
   /* PORTFOLIO SECTION  */
   .section.slider .swiper-slide {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
+    height: auto;
   }
   .section.slider .swiper-slide .portfolio_photos {
     position: relative;
@@ -870,6 +875,7 @@ hr {
     flex-wrap: wrap;
     position: relative;
     width: 100%;
+    left: 50%;
   }
   .section.slider .swiper-slide .portfolio_photos .row .column {
     width: 33vw;
@@ -893,6 +899,7 @@ hr {
   .section.slider .swiper-slide .portfolio-description {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
   .section.slider .swiper-slide .portfolio-description h4 {
     text-align: center;
@@ -912,6 +919,17 @@ hr {
   }
   .howWeWork .info .info__holder .info__block {
     padding: 0 20px 20px 20px;
+  }
+
+  .accordion .accordion-text {
+    margin-right: 0;
+  }
+  .accordion .accordion-text .accordion-button {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .accordion .accordion-image {
+    display: none;
   }
 
   .contacts .contacts-block {

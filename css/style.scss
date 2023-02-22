@@ -564,12 +564,16 @@ hr {
         .portfolio_photos {
             display: flex;
             flex-direction: column;
-            // width: 50%;
             position: relative;
+            .container-image {
+                img {
+                    cursor: pointer;
+                }
+            }
             .row {
                 position: absolute;
                 bottom: 0;
-                left: 50%;
+                left: calc(50% - 10px);
                 transform: translateX(-50%);
                 display: flex;
                 flex-wrap: nowrap;
@@ -587,9 +591,11 @@ hr {
             justify-content: center;
             width: 50%;
             align-items: center;
-        }
-        .portfolio-description h4 {
-            font-size: 24px;
+
+            h4 {
+                font-size: 24px;
+                text-align: center;
+            }
         }
         .portfolio-address {
             font-size: 16px;
@@ -941,8 +947,9 @@ hr {
 
     .section.slider {
         .swiper-slide {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: flex-start;
+            height: auto;
             .portfolio_photos {
                 position: relative;
                 flex-direction: column-reverse;
@@ -950,7 +957,7 @@ hr {
                     flex-wrap: wrap;
                     position: relative;
                     width: 100%;
-                    // justify-content: space-between;
+                    left: 50%;
                     .column {
                         width: 33vw;
                         height: calc(33vw / 16 * 9);
@@ -977,7 +984,7 @@ hr {
             .portfolio-description {
                 margin-left: auto;
                 margin-right: auto;
-
+                width: 100%;
                 h4 {
                     text-align: center;
                 }
@@ -1001,6 +1008,26 @@ hr {
                     padding: 0 20px 20px 20px;
                 }
             }
+        }
+    }
+
+    // ACCORDION
+    // ACCORDION
+    // ACCORDION
+    // ACCORDION
+
+    .accordion {
+        .accordion-text {
+            margin-right: 0;
+
+            .accordion-button {
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+
+        .accordion-image {
+            display: none;
         }
     }
 
