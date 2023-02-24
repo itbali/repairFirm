@@ -976,11 +976,11 @@ hr {
                     width: 100%;
                     left: 50%;
                     .column {
-                        width: 33vw;
-                        height: calc(33vw / 16 * 9);
+                        height: 33vw;
+                        width: calc(33vw / 16 * 12);
                         margin: 3px;
-                        margin-left: auto;
-                        margin-right: auto;
+                        // margin-left: auto;
+                        // margin-right: auto;
                         img {
                             opacity: 1;
                             &:hover {
@@ -992,8 +992,8 @@ hr {
                 .container-image {
                     img {
                         margin: 0;
-                        width: 100%;
-                        height: calc(76vw / 16 * 9);
+                        height: 100%;
+                        width: calc(76vw / 16 * 9);
                         border-radius: var(--giant-border-radius);
                     }
                 }
