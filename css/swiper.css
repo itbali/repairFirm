@@ -7,8 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .swiper-wrapper {
     padding-bottom: 20px;
+    flex-direction: column;
 }

@@ -11,6 +11,7 @@
     outline: none;
     transition: 0.4s;
     margin: 5px;
+    font-size: 20px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -50,7 +51,9 @@
 .accordion-image {
     width: 40%;
     border-radius: var(--giant-border-radius);
-    background: url("../assets/img//faq_bg.jpg") no-repeat 50% / cover;
+    background: url("../assets/img/calculate\ bg.jpg") no-repeat 50% / cover;
+    background-position-x: left;
+    max-height: 700px;
 }
 .accordion-text {
     width: 100%;

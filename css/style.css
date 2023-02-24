@@ -44,10 +44,10 @@ hr {
 }
 
 .wrapper-header {
-  font-size: var(--giant-font-size);
+  font-size: 50px;
   padding-top: 30px;
   margin-bottom: 30px;
-  text-align: center;
+  margin-left: 20px;
 }
 
 .bordersAndPandings {
@@ -78,6 +78,11 @@ hr {
 .header img {
   max-height: 70px;
   width: fit-content;
+}
+.header .header-contact {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: sans-serif;
 }
 .header .whatsApp-call {
   font-family: var(--font-family);
@@ -247,6 +252,7 @@ hr {
   display: none;
 }
 .section.quiz .quiz-content .calculating-block .quiz-container .calculate-button {
+  transition: 0.3s;
   cursor: pointer;
   font-family: var(--font-family);
   background-color: var(--main-color);
@@ -254,17 +260,18 @@ hr {
   position: relative;
   border-radius: var(--border-radius);
   padding: 20px;
-  font-size: var(--medium-font-size);
+  font-size: 34px;
   border: 0;
   width: fit-content;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 .section.quiz .quiz-content .calculating-block .quiz-container .calculate-button:hover {
   background-color: var(--main-color-hover);
 }
 .section.quiz .quiz-content .calculating-block .manager {
-  background: url("./../assets/img/calculate bg.jpg") no-repeat 50%/cover;
-  background-position-x: left;
+  background: url("./../assets/img/calculate-bg.jpg") no-repeat 50%/cover;
+  background-position-x: center;
+  transform: rotate(180deg);
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
@@ -536,8 +543,13 @@ hr {
   flex-direction: column;
   position: relative;
 }
+.section.slider .swiper-slide .portfolio_photos .container-image {
+  width: 100%;
+}
 .section.slider .swiper-slide .portfolio_photos .container-image img {
   cursor: pointer;
+  width: 50vh;
+  height: calc(50vh * 1.25);
 }
 .section.slider .swiper-slide .portfolio_photos .row {
   position: absolute;
@@ -557,19 +569,26 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   width: 50%;
-  align-items: center;
 }
 .section.slider .swiper-slide .portfolio-description h4 {
-  font-size: 24px;
-  text-align: center;
+  margin-top: 10px;
+  font-size: 36px;
 }
 .section.slider .swiper-slide .portfolio-address {
-  font-size: 16px;
+  font-size: 30px;
 }
 .section.slider .swiper-slide .potfolio-todo {
   font-size: 20px;
   margin: 35px 0;
+}
+.section.slider .swiper-slide .portfolio-description-text {
+  font-size: 24px;
+  margin: 35px 0;
+}
+.section.slider .swiper-slide .cost {
+  font-size: 24px;
 }
 
 .contacts .contacts-block {
